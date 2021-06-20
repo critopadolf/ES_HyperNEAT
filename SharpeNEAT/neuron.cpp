@@ -3,6 +3,12 @@ neuron::neuron()
 {
 
 }
+neuron::neuron(float bias_fl, float activation_fl, int id_fl)
+{
+	bias = bias_fl;
+	act = activation_fl * ACTIVATION_LIST.size();
+	id = id_fl;
+}
 neuron::neuron(std::mt19937* mersenne_engine, int nid, config* cfg)
 {
 	bias = randfloat(mersenne_engine, cfg->minWeight, cfg->maxWeight);

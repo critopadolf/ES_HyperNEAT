@@ -141,6 +141,11 @@ inline float randfloat(std::mt19937* mersenne_engine, float RangeStart, float Ra
     return dist(*mersenne_engine);
 }
 
+inline double randDouble(std::mt19937* mersenne_engine, double RangeStart, double RangeEnd)
+{
+    std::uniform_real_distribution<double> dist{ RangeStart, RangeEnd };
+    return dist(*mersenne_engine);
+}
 inline int randInt(std::mt19937* mersenne_engine, int RangeStart, int RangeEnd)
 {
     std::uniform_int_distribution<int> dist{ RangeStart, RangeEnd };

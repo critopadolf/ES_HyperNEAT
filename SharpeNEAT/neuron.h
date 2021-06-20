@@ -15,6 +15,7 @@ private:
 public:
 	int id;
 	neuron();
+	neuron(float bias_fl, float activation_fl, int id_fl);
 	neuron(std::mt19937* mersenne_engine, int nid, config* cfg);
 	neuron(std::mt19937* mersenne_engine, global_id* gid, int c, config* cfg);
 	void set(float z);

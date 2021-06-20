@@ -150,6 +150,7 @@
     <ClCompile Include="Mesh.cpp" />
     <ClCompile Include="Model.cpp" />
     <ClCompile Include="neat.cpp" />
+    <ClCompile Include="neural_mesh.cpp" />
     <ClCompile Include="neuron.cpp" />
     <ClCompile Include="semaphore.cpp" />
     <ClCompile Include="main.cpp" />
@@ -171,6 +172,7 @@
     <ClInclude Include="Mesh.h" />
     <ClInclude Include="Model.h" />
     <ClInclude Include="neat.h" />
+    <ClInclude Include="neural_mesh.h" />
     <ClInclude Include="neuron.h" />
     <ClInclude Include="semaphore.h" />
     <ClInclude Include="typedLayer.h" />

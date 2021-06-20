@@ -75,7 +75,7 @@ std::vector<T> operator*(const std::vector<T>& v0, const float& f1)
 template <typename T>
 void extend(std::vector<T>* v0, const std::vector<T>* v1)
 {
-    for (int i = 0; i < v1.size(); ++i)
+    for (int i = 0; i < v1->size(); ++i)
     {
         v0->push_back((*v1)[i]);
     }

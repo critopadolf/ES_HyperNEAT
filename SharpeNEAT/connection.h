@@ -8,6 +8,7 @@ class connection
 {
 public:
 	connection();
+	connection(float weight, int n0, int n1);
 	connection(global_id* gid, int n0, int n1, std::mt19937* mersenne_engine);
 	void load(float inp);
 	void mutate(std::mt19937* meng, config* cfg);

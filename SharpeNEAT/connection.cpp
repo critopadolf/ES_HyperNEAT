@@ -4,7 +4,12 @@ connection::connection()
 {
 
 }
-
+connection::connection(float weight, int n0, int n1)
+{
+	w = weight;
+	ng[0] = n0;
+	ng[1] = n1;
+}
 connection::connection(global_id* gid, int n0, int n1,  std::mt19937* mersenne_engine)
 {
 	cg = gid->getCID(n0, n1); //semaphore integer counter
